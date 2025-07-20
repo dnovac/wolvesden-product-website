@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - TeamTracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: none;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        .back-link:hover {
+            color: white;
+        }
+
+        .content {
+            background: white;
+            margin: -30px auto 40px;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .story-section {
+            margin: 40px 0;
+        }
+
+        .story-section h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+
+        .story-section p {
+            color: #555;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .features-highlight {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            margin: 40px 0;
+        }
+
+        .features-highlight h3 {
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+
+        .features-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .feature-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+        }
+
+        .feature-item .icon {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .tech-section {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 40px 0;
+        }
+
+        .tech-section h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .tech-item {
+            background: #667eea;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .developer-info {
+            text-align: center;
+            padding: 40px;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            border-radius: 20px;
+            margin: 40px 0;
+        }
+
+        .developer-info h3 {
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                margin: -20px 20px 40px;
+                padding: 30px 25px;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .features-highlight {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Home</a>
+            <h1>About TeamTracker</h1>
+            <p>Built for local sports fans, by a sports fan</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <div class="story-section">
+                <h2>Our Story</h2>
+                <p>
+                    TeamTracker was born from a simple frustration: following your local sports team shouldn't be
+                    difficult.
+                    As a passionate sports fan and software engineer, I found myself constantly jumping between
+                    different websites,
+                    social media accounts, and news sources just to stay updated on my favorite local team.
+                </p>
+                <p>
+                    I wanted something simple, focused, and designed specifically for the mobile experience.
+                    Not a generic sports app trying to cover everything, but a dedicated companion for local team fans
+                    who want quick access to what matters most: upcoming games, live scores, player stats, and timely
+                    notifications.
+                </p>
+                <p>
+                    TeamTracker is the app I wished existed when I was spending my Sunday mornings scrambling to find
+                    game times and wondering if my team's star player was still injured.
+                </p>
+            </div>
+
+            <div class="features-highlight">
+                <h3>What Makes TeamTracker Special</h3>
+                <p>We focus on doing a few things really well, rather than trying to be everything to everyone.</p>
+
+                <div class="features-list">
+                    <div class="feature-item">
+                        <span class="icon">🎯</span>
+                        <strong>Focused Experience</strong>
+                        <p>One team, all the info you need</p>
+                    </div>
+                    <div class="feature-item">
+                        <span class="icon">📱</span>
+                        <strong>Mobile First</strong>
+                        <p>Designed for iPhone from the ground up</p>
+                    </div>
+                    <div class="feature-item">
+                        <span class="icon">🔔</span>
+                        <strong>Smart Notifications</strong>
+                        <p>Only the alerts you actually want</p>
+                    </div>
+                    <div class="feature-item">
+                        <span class="icon">⚡</span>
+                        <strong>Fast & Reliable</strong>
+                        <p>No bloat, just the essentials</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="story-section">
+                <h2>Our Mission</h2>
+                <p>
+                    We believe that following your local team should be effortless and enjoyable.
+                    Our mission is to create the best possible mobile experience for local sports fans,
+                    cutting through the noise to deliver exactly what you need, when you need it.
+                </p>
+                <p>
+                    Every feature in TeamTracker is designed with one question in mind:
+                    "Does this help a fan stay connected with their team?" If the answer isn't a clear yes, we don't
+                    build it.
+                </p>
+            </div>
+
+            <div class="tech-section">
+                <h3>Built With Care</h3>
+                <p>
+                    TeamTracker is built using modern, reliable technologies to ensure a fast, secure, and stable
+                    experience:
+                </p>
+                <div class="tech-stack">
+                    <span class="tech-item">Swift/iOS</span>
+                    <span class="tech-item">Node.js</span>
+                    <span class="tech-item">TypeScript</span>
+                    <span class="tech-item">PostgreSQL</span>
+                    <span class="tech-item">Prisma</span>
+                    <span class="tech-item">Render</span>
+                </div>
+                <p style="margin-top: 20px; color: #666; font-size: 0.95rem;">
+                    We prioritize performance, security, and privacy in every technical decision we make.
+                </p>
+            </div>
+
+            <div class="developer-info">
+                <h3>Made by a Fellow Fan</h3>
+                <p>
+                    Hi! I'm a software engineer with years of experience building backend systems and mobile
+                    applications.
+                    But more importantly, I'm a sports fan who understands the frustration of trying to follow a local
+                    team
+                    in today's fragmented digital landscape.
+                </p>
+                <p style="margin-top: 15px;">
+                    TeamTracker is my attempt to solve this problem, not just for myself, but for every fan who wants
+                    a better way to stay connected with their team.
+                </p>
+            </div>
+
+            <div class="story-section">
+                <h2>Privacy First</h2>
+                <p>
+                    Your privacy matters to us. TeamTracker is designed to collect only the minimum data necessary
+                    to provide you with a great experience. We don't sell your data, we don't track you across the web,
+                    and we don't bombard you with irrelevant notifications.
+                </p>
+                <p>
+                    <a href="privacy-policy.html" style="color: #667eea; text-decoration: none; font-weight: 500;">
+                        Read our full Privacy Policy →
+                    </a>
+                </p>
+            </div>
+
+            <div class="story-section">
+                <h2>What's Next</h2>
+                <p>
+                    We're just getting started. While TeamTracker launches with all the essential features you need,
+                    we have exciting plans for the future based on feedback from users like you.
+                </p>
+                <p>
+                    Have ideas for new features? Found a bug? Just want to say hi?
+                    <a href="support.html" style="color: #667eea; text-decoration: none; font-weight: 500;">We'd love to
+                        hear from you</a>.
+                </p>
+            </div>
+
+            <div style="text-align: center; margin: 40px 0; padding: 30px; background: #f8f9fa; border-radius: 15px;">
+                <h3 style="color: #2c3e50; margin-bottom: 15px;">Thank You</h3>
+                <p style="color: #666;">
+                    Thank you for choosing TeamTracker to follow your local team.
+                    We're honored to be part of your game day experience.
+                </p>
+                <p style="margin-top: 20px;">
+                    <a href="index.html"
+                        style="background: #667eea; color: white; padding: 12px 25px; text-decoration: none; border-radius: 8px; font-weight: 500;">
+                        Get TeamTracker
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

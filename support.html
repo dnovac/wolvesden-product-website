@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - TeamTracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: none;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        .back-link:hover {
+            color: white;
+        }
+
+        .content {
+            background: white;
+            margin: -30px auto 40px;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-section {
+            margin: 40px 0;
+        }
+
+        .faq-category {
+            margin-bottom: 40px;
+        }
+
+        .faq-category h3 {
+            color: #667eea;
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .faq-item {
+            background: #f8f9fa;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .faq-item:hover {
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-question {
+            background: none;
+            border: none;
+            padding: 20px;
+            width: 100%;
+            text-align: left;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #2c3e50;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-question:hover {
+            background: #e9ecef;
+        }
+
+        .faq-answer {
+            padding: 0 20px 20px;
+            color: #555;
+            display: none;
+        }
+
+        .faq-answer.active {
+            display: block;
+        }
+
+        .contact-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            margin: 40px 0;
+            text-align: center;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .contact-method {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 25px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+
+        .contact-method h4 {
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .contact-method a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .contact-method a:hover {
+            border-bottom-color: white;
+        }
+
+        .info-box {
+            background: #e3f2fd;
+            border-left: 4px solid #2196f3;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .info-box h4 {
+            color: #1565c0;
+            margin-bottom: 10px;
+        }
+
+        .app-info {
+            background: #f0f8ff;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+        }
+
+        .app-info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .app-info-item {
+            text-align: center;
+            padding: 15px;
+            background: white;
+            border-radius: 10px;
+        }
+
+        .app-info-item strong {
+            color: #667eea;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                margin: -20px 20px 40px;
+                padding: 30px 25px;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .contact-section {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Home</a>
+            <h1>Support Center</h1>
+            <p>We're here to help you get the most out of TeamTracker</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <div class="faq-section">
+                <h2>Frequently Asked Questions</h2>
+
+                <div class="faq-category">
+                    <h3>🏈 General Usage</h3>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFaq(this)">
+                            How do I change my team?
+                            <span>+</span>
+                        </button>
+                        <div class="faq-answer">
+                            Go to Settings > Team Selection and choose your preferred local team from the list. Your
+                            dashboard will automatically update with your new team's information.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFaq(this)">
+                            Why isn't my team's data updating?
+                            <span>+</span>
+                        </button>
+                        <div class="faq-answer">
+                            Make sure you have a stable internet connection. Data is updated automatically when
+                            available from official sources. If the issue persists, try force-closing and reopening the
+                            app.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFaq(this)">
+                            Can I follow multiple teams?
+                            <span>+</span>
+                        </button>
+                        <div class="faq-answer">
+                            Currently, the app is designed to focus on one local team to provide the best personalized
+                            experience. Multiple team support may be added in future updates.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-category">
+                    <h3>🔔 Notifications</h3>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFaq(this)">
+                            How do I enable/disable game notifications?
+                            <span>+</span>
+                        </button>
+                        <div class="faq-answer">
+                            Go to Settings > Notifications within the app, or use your device's Settings > Notifications
+                            > TeamTracker to customize your notification preferences.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFaq(this)">
+                            When do notifications arrive?
+                            <span>+</span>
+                        </button>
+                        <div class="faq-answer">
+                            Game reminders are sent 1 hour before kickoff. Score updates are sent shortly after games
+                            end. You can customize these timings in the notification settings.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFaq(this)">
+                            I'm not receiving notifications. What should I do?
+                            <span>+</span>
+                        </button>
+                        <div class="faq-answer">
+                            Check that notifications are enabled in both the app and your device settings. Ensure you
+                            have a stable internet connection and that Do Not Disturb is not blocking notifications.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-category">
+                    <h3>🔧 Technical Issues</h3>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFaq(this)">
+                            The app crashes when I open it. What should I do?
+                            <span>+</span>
+                        </button>
+                        <div class="faq-answer">
+                            Try force-closing and reopening the app. If the issue persists, restart your device. If
+                            problems continue, please contact our support team with your device model and iOS version.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFaq(this)">
+                            Player stats aren't showing up.
+                            <span>+</span>
+                        </button>
+                        <div class="faq-answer">
+                            Stats are updated after official game reports are published, usually within 24 hours of a
+                            match. If stats are still missing after this time, please contact support.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFaq(this)">
+                            What iOS versions are supported?
+                            <span>+</span>
+                        </button>
+                        <div class="faq-answer">
+                            TeamTracker requires iOS 14.0 or later. Make sure your device is updated to a compatible iOS
+                            version for the best experience.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-section" id="contact">
+                <h2>Contact Support</h2>
+                <p>Need additional help? We typically respond within 24 hours.</p>
+
+                <div class="info-box">
+                    <h4>Before Contacting Us</h4>
+                    <p>To help us assist you faster, please have the following information ready:</p>
+                    <ul>
+                        <li>Your device model and iOS version</li>
+                        <li>App version (found in Settings > About)</li>
+                        <li>Description of the issue you're experiencing</li>
+                        <li>Screenshots if applicable</li>
+                    </ul>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-method">
+                        <h4>📧 Email Support</h4>
+                        <p><a href="mailto:support@teamtracker.app">support@teamtracker.app</a></p>
+                        <p><small>Response within 24 hours</small></p>
+                    </div>
+
+                    <div class="contact-method">
+                        <h4>💬 In-App Support</h4>
+                        <p>Use "Contact Support" in Settings</p>
+                        <p><small>Fastest response time</small></p>
+                    </div>
+
+                    <div class="contact-method">
+                        <h4>💡 Feature Requests</h4>
+                        <p><a href="mailto:feedback@teamtracker.app">feedback@teamtracker.app</a></p>
+                        <p><small>We love your ideas!</small></p>
+                    </div>
+                </div>
+
+                <div style="margin-top: 30px;">
+                    <h4>Response Times</h4>
+                    <p>General Questions: 24 hours • Technical Issues: 12 hours • Critical Bugs: 6 hours</p>
+                </div>
+            </div>
+
+            <div class="app-info">
+                <h3>App Information</h3>
+                <div class="app-info-grid">
+                    <div class="app-info-item">
+                        <strong>Current Version</strong>
+                        1.0.0
+                    </div>
+                    <div class="app-info-item">
+                        <strong>Last Updated</strong>
+                        January 2025
+                    </div>
+                    <div class="app-info-item">
+                        <strong>Compatibility</strong>
+                        iOS 14.0+
+                    </div>
+                    <div class="app-info-item">
+                        <strong>Size</strong>
+                        ~25 MB
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin: 40px 0;">
+                <h3>Legal & More</h3>
+                <p>
+                    <a href="privacy-policy.html" style="color: #667eea; text-decoration: none; margin: 0 15px;">Privacy
+                        Policy</a>
+                    <a href="terms.html" style="color: #667eea; text-decoration: none; margin: 0 15px;">Terms of
+                        Service</a>
+                    <a href="about.html" style="color: #667eea; text-decoration: none; margin: 0 15px;">About</a>
+                </p>
+            </div>
+
+            <div
+                style="text-align: center; margin-top: 40px; padding-top: 30px; border-top: 1px solid #eee; color: #777;">
+                <p><em>Having trouble with something not listed here? Don't hesitate to reach out to our support
+                        team.</em></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleFaq(button) {
+            const answer = button.nextElementSibling;
+            const icon = button.querySelector('span');
+
+            // Close all other FAQ items
+            document.querySelectorAll('.faq-answer').forEach(item => {
+                if (item !== answer) {
+                    item.classList.remove('active');
+                    item.previousElementSibling.querySelector('span').textContent = '+';
+                }
+            });
+
+            // Toggle current FAQ item
+            answer.classList.toggle('active');
+            icon.textContent = answer.classList.contains('active') ? '−' : '+';
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
