@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - WolvesDen App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.5;
+            color: #1d1d1f;
+            background: #fbfbfd;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: #f5f5f7;
+            color: #1d1d1f;
+            padding: 60px 0;
+            text-align: center;
+            border-bottom: 1px solid #d2d2d7;
+        }
+
+        header h1 {
+            font-size: 40px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            letter-spacing: -0.02em;
+        }
+
+        header p {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            color: #86868b;
+            font-size: 17px;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: #0071e3;
+            text-decoration: none;
+            margin-bottom: 20px;
+            font-weight: 400;
+            font-size: 14px;
+            transition: opacity 0.2s ease;
+        }
+
+        .back-link:hover {
+            opacity: 0.8;
+        }
+
+        .content {
+            background: white;
+            margin: 40px auto;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.04);
+        }
+
+        .last-updated {
+            background: #f5f5f7;
+            padding: 15px 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            color: #1d1d1f;
+            font-weight: 400;
+            font-size: 14px;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+
+        h2 {
+            color: #1d1d1f;
+            margin: 40px 0 16px 0;
+            font-size: 24px;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+        }
+
+        h3 {
+            color: #1d1d1f;
+            margin: 24px 0 12px 0;
+            font-size: 19px;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #86868b;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-size: 16px;
+        }
+
+        ul,
+        ol {
+            margin: 10px 0 20px 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            color: #86868b;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-size: 16px;
+        }
+
+        .highlight-box {
+            background: #f5f5f7;
+            border-left: 4px solid #0071e3;
+            padding: 24px;
+            margin: 24px 0;
+            border-radius: 10px;
+        }
+
+        .highlight-box h3 {
+            margin-top: 0;
+        }
+
+        .contact-box {
+            background: #f5f5f7;
+            color: #1d1d1f;
+            padding: 32px;
+            border-radius: 20px;
+            margin: 40px 0;
+            text-align: center;
+        }
+
+        .contact-box h3 {
+            margin-bottom: 16px;
+        }
+
+        .contact-box p {
+            max-width: 500px;
+            margin: 0 auto 16px;
+        }
+
+        .contact-box a {
+            color: #0071e3;
+            text-decoration: none;
+            font-weight: 400;
+            transition: opacity 0.2s ease;
+        }
+
+        .contact-box a:hover {
+            opacity: 0.8;
+        }
+
+        .button {
+            display: inline-block;
+            background: #0071e3;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 980px;
+            text-decoration: none;
+            font-weight: 400;
+            transition: all 0.2s ease;
+            font-size: 16px;
+            margin-top: 16px;
+        }
+
+        .button:hover {
+            background: #0077ed;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                margin: 20px auto;
+                padding: 30px 25px;
+            }
+
+            header h1 {
+                font-size: 32px;
+            }
+
+            header {
+                padding: 40px 0;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+
+            h3 {
+                font-size: 18px;
+            }
+        }
+
+        strong {
+            color: #1d1d1f;
+            font-weight: 500;
+        }
+
+        a {
+            color: #0071e3;
+            text-decoration: none;
+            transition: opacity 0.2s ease;
+        }
+
+        a:hover {
+            opacity: 0.8;
+        }
+
+        .table-of-contents {
+            background: #f5f5f7;
+            padding: 20px 25px;
+            border-radius: 10px;
+            margin: 20px 0 30px;
+        }
+
+        .table-of-contents h3 {
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .table-of-contents ol {
+            margin-bottom: 0;
+        }
+
+        .table-of-contents a {
+            color: #0071e3;
+            text-decoration: none;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        .table-of-contents li {
+            color: #86868b;
+        }
+
+        .effective-date {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid #d2d2d7;
+            color: #86868b;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Home</a>
+            <h1>Terms of Service</h1>
+            <p>Please read these terms carefully before using our app</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <div class="last-updated">
+                <strong>Last updated:</strong> January 2025
+            </div>
+
+            <p>
+                Welcome to WolvesDen App. These Terms of Service ("Terms") govern your use of the WolvesDen App mobile
+                application
+                ("App") operated by WolvesDen App ("us", "we", or "our"). By downloading, accessing, or using our App,
+                you agree to be bound by these Terms. If you disagree with any part of the Terms, you may not access or
+                use our App.
+            </p>
+
+            <div class="table-of-contents">
+                <h3>Contents</h3>
+                <ol>
+                    <li><a href="#acceptance">Acceptance of Terms</a></li>
+                    <li><a href="#changes">Changes to Terms</a></li>
+                    <li><a href="#access">Access and Account Registration</a></li>
+                    <li><a href="#license">License to Use</a></li>
+                    <li><a href="#restrictions">Restrictions</a></li>
+                    <li><a href="#content">User Content</a></li>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                    <li><a href="#thirdparty">Third-Party Services</a></li>
+                    <li><a href="#disclaimer">Disclaimer of Warranties</a></li>
+                    <li><a href="#limitation">Limitation of Liability</a></li>
+                    <li><a href="#indemnification">Indemnification</a></li>
+                    <li><a href="#termination">Termination</a></li>
+                    <li><a href="#governing">Governing Law</a></li>
+                    <li><a href="#contact">Contact Information</a></li>
+                </ol>
+            </div>
+
+            <h2 id="acceptance">1. Acceptance of Terms</h2>
+            <p>
+                By downloading, installing, or using the WolvesDen App, you acknowledge that you have read, understood,
+                and agree
+                to be bound by these Terms. If you are using the App on behalf of an organization, you are agreeing to
+                these
+                Terms for that organization and promising that you have the authority to bind that organization to these
+                Terms.
+            </p>
+
+            <h2 id="changes">2. Changes to Terms</h2>
+            <p>
+                We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a
+                revision is
+                material, we will provide at least 30 days' notice prior to any new terms taking effect. What
+                constitutes a
+                material change will be determined at our sole discretion. By continuing to access or use our App after
+                any
+                revisions become effective, you agree to be bound by the revised terms.
+            </p>
+
+            <h2 id="access">3. Access and Account Registration</h2>
+            <p>
+                The WolvesDen App provides information about your selected local sports team. While most features do not
+                require
+                registration, certain personalized features may require you to provide certain information, such as your
+                preferred team selection.
+            </p>
+            <p>
+                You are responsible for maintaining the confidentiality of any information you use to access the App's
+                features,
+                and are fully responsible for all activities that occur under your account. You agree to immediately
+                notify us of any
+                unauthorized use of your account or any other breach of security.
+            </p>
+
+            <h2 id="license">4. License to Use</h2>
+            <p>
+                Subject to these Terms, we grant you a limited, non-exclusive, non-transferable, and revocable license
+                to download,
+                install, and use the App for your personal, non-commercial purposes, strictly in accordance with these
+                Terms and any
+                other applicable usage rules set forth in the Apple App Store terms of service.
+            </p>
+
+            <div class="highlight-box">
+                <h3>App Store Requirements</h3>
+                <p>
+                    This App is distributed through the Apple App Store. As a result, you acknowledge and agree that:
+                </p>
+                <ul>
+                    <li>These Terms are between you and WolvesDen App, not with Apple</li>
+                    <li>Apple has no obligation to provide maintenance or support services for the App</li>
+                    <li>In the event of any third-party claim that the App infringes on their intellectual property
+                        rights,
+                        Apple will not be responsible for the investigation, defense, settlement, or discharge of such
+                        claims</li>
+                    <li>Apple and its subsidiaries are third-party beneficiaries of these Terms</li>
+                </ul>
+                </p>
+            </div>
+
+            <h2 id="restrictions">5. Restrictions</h2>
+            <p>You agree not to, and will not permit others to:</p>
+            <ul>
+                <li>License, sell, rent, lease, assign, distribute, transmit, host, outsource, disclose, or otherwise
+                    commercially
+                    exploit the App or make the App available to any third party</li>
+                <li>Modify, make derivative works of, disassemble, decrypt, reverse compile or reverse engineer any part
+                    of the App</li>
+                <li>Remove, alter, or obscure any proprietary notice (including any notice of copyright or trademark)
+                    on any part of the App</li>
+                <li>Use the App in any way that violates applicable laws or regulations</li>
+                <li>Use the App to send automated queries to any website or to send unsolicited commercial emails</li>
+                <li>Use the App to harm, threaten, or harass another person or organization</li>
+                <li>Use the App for any purpose that is unlawful or prohibited by these Terms</li>
+            </ul>
+
+            <h2 id="content">6. User Content</h2>
+            <p>
+                Our App may allow you to customize certain preferences and settings. You retain all rights in, and are
+                solely
+                responsible for, the content you create, post, upload, or otherwise make available through the App.
+            </p>
+            <p>
+                By providing any content through the App, you grant us a worldwide, non-exclusive, royalty-free license
+                to use,
+                copy, modify, and display that content solely for the purpose of providing and improving the App.
+            </p>
+
+            <h2 id="privacy">7. Privacy Policy</h2>
+            <p>
+                Your use of the App is also governed by our Privacy Policy, which is incorporated by reference into
+                these Terms.
+                Please review our <a href="privacy-policy.html">Privacy Policy</a>, which explains how we collect, use,
+                and safeguard
+                the information you provide to us.
+            </p>
+
+            <h2 id="thirdparty">8. Third-Party Services</h2>
+            <p>
+                The App may display, include, or make available third-party content (including data, information,
+                applications, and
+                other products or services) or provide links to third-party websites or services.
+            </p>
+            <p>
+                You acknowledge and agree that we are not responsible for any third-party services or content, including
+                their
+                accuracy, completeness, timeliness, validity, legality, decency, quality, or any other aspect. We do not
+                assume and
+                will not have any liability to you or any other person for any third-party services or content.
+            </p>
+
+            <h2 id="disclaimer">9. Disclaimer of Warranties</h2>
+            <p>
+                THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED,
+                INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+                PURPOSE,
+                AND NON-INFRINGEMENT.
+            </p>
+            <p>
+                WE DO NOT WARRANT THAT THE APP WILL FUNCTION UNINTERRUPTED, SECURE, OR AVAILABLE AT ANY PARTICULAR TIME
+                OR LOCATION;
+                THAT ANY ERRORS OR DEFECTS WILL BE CORRECTED; OR THAT THE APP IS FREE OF VIRUSES OR OTHER HARMFUL
+                COMPONENTS.
+            </p>
+
+            <h2 id="limitation">10. Limitation of Liability</h2>
+            <p>
+                TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL WOLVESDEN APP OR ITS SUPPLIERS BE
+                LIABLE FOR ANY
+                SPECIAL, INCIDENTAL, INDIRECT, OR CONSEQUENTIAL DAMAGES WHATSOEVER (INCLUDING, BUT NOT LIMITED TO,
+                DAMAGES FOR LOSS OF
+                PROFITS, LOSS OF DATA OR OTHER INFORMATION, BUSINESS INTERRUPTION, OR ANY OTHER PECUNIARY LOSS) ARISING
+                OUT OF OR
+                RELATED TO YOUR USE OF OR INABILITY TO USE THE APP, EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF
+                SUCH DAMAGES.
+            </p>
+
+            <h2 id="indemnification">11. Indemnification</h2>
+            <p>
+                You agree to indemnify, defend, and hold harmless WolvesDen App and its officers, directors, employees,
+                agents,
+                and affiliates from and against any and all claims, liabilities, damages, losses, costs, expenses, or
+                fees
+                (including reasonable attorneys' fees) that arise from or relate to: (a) your use of the App; (b) your
+                violation of
+                these Terms; or (c) your violation of any rights of another.
+            </p>
+
+            <h2 id="termination">12. Termination</h2>
+            <p>
+                We may terminate or suspend your access to the App immediately, without prior notice or liability, for
+                any reason
+                whatsoever, including without limitation if you breach these Terms.
+            </p>
+            <p>
+                Upon termination, your right to use the App will immediately cease. If you wish to terminate your
+                account or stop using
+                the App, you may simply discontinue using the App or delete it from your devices.
+            </p>
+
+            <h2 id="governing">13. Governing Law</h2>
+            <p>
+                These Terms shall be governed by and construed in accordance with the laws of the United States, without
+                regard to its
+                conflict of law provisions. Our failure to enforce any right or provision of these Terms will not be
+                considered a waiver
+                of those rights.
+            </p>
+
+            <h2 id="contact">14. Contact Information</h2>
+            <p>
+                If you have any questions about these Terms, please contact us:
+            </p>
+
+            <div class="contact-box">
+                <h3>Questions About Our Terms?</h3>
+                <p>We're here to help clarify our policies and address any concerns you might have.</p>
+                <p>
+                    <strong>Email:</strong> <a href="mailto:legal@wolvesdenapp.com">legal@wolvesdenapp.com</a><br>
+                    <strong>Support:</strong> <a href="support.html">Visit our Support Center</a>
+                </p>
+                <a href="support.html" class="button">Contact Support</a>
+            </div>
+
+            <div class="effective-date">
+                <p>These Terms of Service are effective as of January 1, 2025.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
